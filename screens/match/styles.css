@@ -1,0 +1,120 @@
+main {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas: 
+        "card card"
+        "button button";
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #f07167;
+}
+
+.grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-card {
+    display: grid;
+    grid-template-areas: 
+        "name name"
+        "red-threes red-threes"
+        "black red"
+        "round-points round-points"
+        "total total";
+}
+
+#first-team-card {
+    border-right: solid 2px #f07167;
+}
+
+#sec-team-card {
+    border-left: solid 2px #f07167;
+}
+
+.team-name {
+    grid-area: name;
+    margin: 21px;
+}
+
+.red-three-container {
+    grid-area: red-threes;
+}
+
+.black-container {
+    grid-area: black;
+}
+
+.red-container {
+    grid-area: red;
+}
+
+.round-points-container {
+    grid-area: round-points;
+}
+
+.points {
+    grid-area: total;
+}
+
+.input {
+    width: 30%;
+    margin: 12px;
+    padding: 4px 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkmark-container {
+    margin: 12px;
+}
+
+.points button {
+    padding: 6px 12px;
+    margin-top: 6px;
+    border: none;
+    background-color: #439c74;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.points button:hover {
+    transform: scale(1.1);
+}
+
+main input[type=number]::-webkit-inner-spin-button, 
+main input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.end-round {
+    grid-area: button;
+    width: 50%;
+    margin: auto;
+    height: 46px;
+    max-width: 250px;
+    border: none;
+    border-radius: 26px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    background-color: #00afb9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.end-round:hover {
+    transform: scale(1.15);
+    background-color: #f07167;
+}

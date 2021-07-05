@@ -1,0 +1,113 @@
+body {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 9fr 1fr;
+    grid-template-areas: 
+        "header main"
+        "header footer";
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: #00afb9;
+}
+
+header {
+    grid-area: header;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+
+    background-image: url("../img/rummy.jpeg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fdfcdc;
+    padding: 32px;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+form > div {
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 16px;
+}
+.form-title {
+    text-align: start;
+}
+.forgot-password {
+    text-align: end;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 0 16px;
+    margin-top: 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 16px;
+    height: 46px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: none;
+    border-radius: 26px;
+    height: 46px;
+    width: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    background-color: #00afb9;
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(0.975);
+    background-color: #0081a7;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #fdfcdc;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    color: #f07167;
+    cursor: pointer;
+}
+i {
+    padding-right: 12px;
+}
+
+@media (max-width: 900px) {}
