@@ -10,10 +10,19 @@ header{
     background-color: #fed9b7;
 }
 
+.logo {
+    width: 150px;
+    position: absolute;
+    margin-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 main {
     background-color: #fdfcdc;
 }
 
+/* MENU */
 #menu-button {
     margin: 34px;
     font-size: 30px;
@@ -90,14 +99,7 @@ main {
     transform: scaleX(1);
 }
 
-.logo {
-    width: 150px;
-    position: absolute;
-    margin-top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+/* GITHUB BUTTON */
 .github{
 	position: fixed;
     z-index: 100;
@@ -120,4 +122,42 @@ main {
 
 .github:hover {
 	background-color: #24292e;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    color: black
+}
+
+footer .social {
+    display: flex;
+    gap: 14px;
+    font-size: 1.3rem;
+}
+
+.social i {
+    transition: 0.2s;
+}
+
+.social a {
+    color: black;
+}
+
+.social .fa-facebook-square:hover {
+    transform: scale(1.1);
+    color: #3b5998;
+}
+
+.social .fa-instagram-square:hover {
+    transform: scale(1.1);
+    color: #c32aa3;
+}
+
+.social .fa-twitter-square:hover {
+    transform: scale(1.1);
+    color: #00acee;
 }
