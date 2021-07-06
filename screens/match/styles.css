@@ -66,6 +66,7 @@ main h2 {
 
 .input {
     width: 30%;
+    min-width: 90px;
     margin: 12px;
     padding: 4px 10px;
     font-size: 1.8rem;
@@ -117,4 +118,36 @@ main input[type=number]::-webkit-outer-spin-button {
 .end-round:hover {
     transform: scale(1.15);
     background-color: #f07167;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #first-team-card {
+        border: none;
+        margin-top: 50px;
+    }
+
+    #sec-team-card {
+        border: none;
+        margin: 50px 0;
+    }
+
+    .end-round {
+        position: fixed;
+        width: 70%;
+        z-index: 100;
+	    bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
