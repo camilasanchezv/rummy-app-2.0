@@ -1,3 +1,6 @@
+// constant for menu.js
+const hide = document.getElementsByClassName('end-round')[0]
+
 // Team 1 consts
 const redThrees1 = document.getElementsByClassName('red-threes-1')
 const blacks1 = document.getElementById('black1')
