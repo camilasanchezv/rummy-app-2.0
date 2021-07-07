@@ -169,12 +169,22 @@ footer .social {
 
     footer {
         padding: 0 10px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         gap: 14px;
     }
-    
+
     footer .social {
         font-size: 1rem;
         gap: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    #menu-button {
+        margin: 34px 0 0 24px;
+    }
+    
+    footer p{
+        display: none;
     }
 }
