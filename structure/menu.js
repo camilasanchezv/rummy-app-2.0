@@ -2,7 +2,7 @@ const menuButton = document.getElementById('menu-button')
 const menu = document.getElementById('menu')
 const main = document.getElementsByTagName('main')[0]
 const footer = document.getElementsByTagName('footer')[0]
-// const hide will be defined at the screen's script in case of needed
+const hide = document.getElementsByClassName('end-round')[0] // for match screen
 
 let open = false // this will determine if the menu is open or not
 

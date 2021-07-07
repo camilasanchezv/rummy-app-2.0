@@ -9,6 +9,7 @@ main {
 h1 {
     color: #0081a7;
     font-size: 3.5rem;
+    text-align: center;
 }
 
 input{
@@ -40,4 +41,10 @@ input{
 .start-button:hover {
     transform: scale(0.975);
     background-color: #0081a7;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        margin-top: 80px;
+    }
 }
