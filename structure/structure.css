@@ -49,8 +49,8 @@ main {
 }
 
 .user-image {
-    width: 17vw;
-    height: 17vw;
+    width: 325px;
+    height: 325px;
     border-radius: 50%;
     margin: 32px 0;
 }
@@ -160,6 +160,22 @@ footer .social {
 .social .fa-twitter-square:hover {
     transform: scale(1.1);
     color: #00acee;
+}
+
+
+@media (max-width: 425px) {
+    #menu {
+        max-width: 100vw;
+    }
+
+    .user-image {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {

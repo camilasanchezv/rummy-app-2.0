@@ -2,12 +2,14 @@ const menuButton = document.getElementById('menu-button')
 const menu = document.getElementById('menu')
 const main = document.getElementsByTagName('main')[0]
 const footer = document.getElementsByTagName('footer')[0]
+const hide = document.getElementsByClassName('end-round')[0]
 
 let open = false // this will determine if the menu is open or not
 
 function closeSettings() {
     menu.style.width = '0';
     menuButton.style.color = '#00afb9'
+    if (hide) hide.classList.remove('hide')
     open = false;
 }
 
@@ -16,6 +18,7 @@ function openButton() {
     if (!open) {
         menu.style.width = '425px';
         menuButton.style.color = '#f07167'
+        if (hide) hide.classList.add('hide')
         open = true;
 
         // add listener for closing menu
