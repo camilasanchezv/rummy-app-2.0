@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
 
-    background-image: url("../img/rummy.jpeg");
+    background-image: url("../../assets/rummy.jpeg");
     opacity: 0.7;
     background-repeat: no-repeat;
     background-size:cover;
@@ -32,11 +32,13 @@ main {
     padding: 32px;
 }
 
-img {
+.logo {
     width: 80%;
     margin: auto;
+    max-width: 300px;
 }
 
+/* LOGIN FORM */
 form {
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ form {
     justify-content: center;
 }
 
-form > div {
+form > section {
     width: 100%;
 }
 
@@ -56,12 +58,9 @@ h2 {
     text-align: center;
     padding: 0 16px;
 }
+
 .form-title {
     text-align: start;
-}
-.forgot-password {
-    text-align: end;
-    cursor: pointer;
 }
 
 input {
@@ -75,6 +74,26 @@ input {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+a {
+    color: #f07167;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+a:hover {
+    color: #0081a7;
+}
+
+.forgot-password {
+    text-align: end;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.forgot-password:hover {
+    color: #f07167;
+}
+
 button {
     border: none;
     border-radius: 26px;
@@ -83,7 +102,6 @@ button {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     font-size: 1rem;
     background-color: #00afb9;
-    
     cursor: pointer;
     transition: 0.3s;
 }
@@ -93,21 +111,36 @@ button:hover {
     background-color: #0081a7;
 }
 
+/* FOOTER */
 footer {
     grid-area: footer;
     background-color: #fdfcdc;
-
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-a {
-    color: #f07167;
-    cursor: pointer;
+.github:hover {
+    color: #24292e;
 }
+
 i {
     padding-right: 12px;
 }
 
-@media (max-width: 900px) {}
+@media (max-width: 1000px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9fr 1fr;
+        grid-template-areas: 
+            "main"
+            "footer";
+        min-height: 100vh;
+        width: 100vw;
+    }
+
+    header {
+        display: none;
+    }
+}
