@@ -5,7 +5,7 @@ body {
     grid-template-areas: 
         "header main"
         "header footer";
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
 
     background-color: #00afb9;
@@ -136,7 +136,7 @@ i {
         grid-template-areas: 
             "main"
             "footer";
-        min-height: 100vh;
+        height: 100%;
         width: 100vw;
     }
 

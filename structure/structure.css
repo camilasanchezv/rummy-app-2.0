@@ -8,6 +8,8 @@ body {
 
 header{
     background-color: #fed9b7;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -178,6 +180,10 @@ footer .social {
         font-size: 1rem;
         gap: 8px;
     }
+
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 425px) {
@@ -188,10 +194,6 @@ footer .social {
     .user-image {
         width: 80vw;
         height: 80vw;
-    }
-
-    .hide {
-        display: none;
     }
 }
 
